@@ -1,20 +1,16 @@
+#Qn2
 day = int(input("day: "))
-month = int(input("month(integer): "))
+month = int(input("month: "))
 year = int(input("year: "))
 
-#dictionary with months to days in them
-dates = {
-    1:31, 2:28, 3:31, 4:30, 5:31, 6:30, 7:31, 8:31, 9:30, 10:31, 11:30, 12:31
-}
+#dictionary with months to days
+dates = {1:31, 2:28, 3:31, 4:30, 5:31, 6:30, 7:31, 8:31, 9:30, 10:31, 11:30, 12:31}
 
-#if year not in range(1800,2025) or mon not in range(0,13) or day>dates[mon]: raise ValueError("Please enter a valid date")
-#using if elif for conditions
 if year not in range(1800,2025): raise ValueError("Please enter a valid date")
 elif month not in range(0,13): raise ValueError("Please enter a valid date")
 elif day>dates[month]: raise ValueError("Please enter a valid date")
 
 if year % 4 == 0 and (year % 100 != 0 or year%400 == 0): dates[2] = 29
-#print(dates[2])
 
 if day == dates[month]:
     day = 1
