@@ -1,11 +1,11 @@
 #Qn1
-inp = input(">") 
+inp = input('Enter String:') 
 inp = " ".join(str1.split()) #remove extra spaces
 
 # multiple words
 if (' ' in inp):
     words = set(inp.split(' '))
-    for a in words: print(a, 'occurs', inp.count(a), 'times')
+    for b in words: print(b, ':', inp.count(b), 'times')
 
 #count letters in a single word
 else:
