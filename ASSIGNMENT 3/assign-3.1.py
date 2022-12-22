@@ -11,3 +11,5 @@ if (' ' in inp):
 else:
     for a in set(inp): 
         print(a, 'occurs', inp.count(a), 'times')
+
+        
