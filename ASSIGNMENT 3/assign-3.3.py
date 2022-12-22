@@ -10,3 +10,4 @@ list_final = []
 for i in numbers:list_final.append((i,i**2))
 
 print(list_final)
+
